@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css” rel=”nofollow”
+        integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+    
+      <title>Dotnet Training Week4 Assignment</title>
+</head>
+
+<body style="padding: 50px;">
+    <h3 id="title">Student Enrollment Form</h3>
+
+    <div class=" innerdiv">
+        <div class="row">
+            <div style="border: 1cm;border-color: gray;" class="col-6	col-sm-6 col-md-6	col-lg-6	col-xl-6">
+        <div id="form" >
+                    <div>
+                        <label> Name</label>
+                        <input type="text" class="input-form" name="Name" id="name"/>
+                    </div>
+
+
+                    <div>
+                        <label> Email</label>
+                        <input type="text" class="input-form" name="Email" id="email"/>
+                    </div>
+                    <div>
+                        <label> Website</label>
+                        <input type="text" class="input-form" name="Website" id="website"/>
+                    </div>
+                    <div>
+                        <label> Image Link</label>
+                        <input type="text" class="input-form" name="Image Link"  id="image"/>
+                    </div>
+                    <div style="margin-top: 15px;display: flex">
+                        <label> Gender</label>
+                        <div >
+                            <input type="radio" id="male" name="Gender" value="Male" style="margin-left:7px">
+                              <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="Gender" value="Female" style="margin-left:7px">
+                              <label for="female">Female</label><br>
+                        </div>
+                    </div>
+                    <div>
+                        <label> Skills</label>
+                        <input class="checkbox" type="checkbox" name="Skills" id="java" />Java
+                        <input class="checkbox" type="checkbox" name="Skills" id="html"  />HTML
+                        <input class="checkbox" type="checkbox" name="Skills" id="css"/>CSS
+
+                    </div> 
+                    <div style="margin-top: 15px;">
+ 
+                        <button type="submit"  onclick="enrollStudentsList()"  class="btn btn-primary btn-sm"  > Enroll Student</button>
+                        <button type="reset" style="margin-left: 15px;" class="btn btn-danger btn-sm">Clear</button>
+                    </div>
+                </div>
+             
+               
+
+            </div>
+            <div class="vl"></div>
+            <div style="text-align: -webkit-center;border: 1cm;border-color: gray;" class="col-6	col-sm-6 col-md-6	col-lg-6	col-xl-6">
+               
+                <h6 style="padding-top:20px"><b>Enrolled Students</b></h6>
+                <table id="list">
+                    <tr >
+                        <th style="color:white;font-size:12px">  Description</th>
+                        <th style="width:20%;color:white;font-size:12px">  Image</th>
+                    </tr> 
+                </table>
+            </div>
+        </div>
+    </div>
+    <h6 id="basetitle" style="font-size:10px;padding:2px;border-bottom: 1px solid black;"> Copyright 2020-2021 by Freshers Training</h6>
+    <script src="myscript.js"></script>
+</body>
+
+
+</html>
